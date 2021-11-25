@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos medicamentos</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body class="fondo">
+
+    <header class="header">
+        <h1 class="header__texto d-none d-lg-block">
+            <span class="header header--texto1">Siempre cuidando tu salud</span>
+            <span class="header header--texto2">Farmacia Raspo</span>
+        </h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+
+        <div class="container">
+
+            <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Farmacia Raspo</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Inicio</a></li>
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="ubicacion.html">Ubicación</a></li>
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="horario.html">Horarios</a></li>
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="pedidoM.html">Medicamentos</a></li>
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="pedidoP.html">Perfumería</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <main>
+
+        <h1 class="titulos">Pedidos medicamentos</h1>
+
+    <article>
+
+        <p>En esta página podrá realizar su pedido de medicamentos con y sin receta, según sea el caso.</p>
+
+        <p>En caso de que su medicamento precise recteta, favor de adijuntar foto de la receta y, además, foto de su carnet de obra social. Si no posee un carnet, dejar en las especificaciones del pedido sus datos de afiliado.</p>
+
+        <p>Rellen el fomrulario con sus datos y la información requerida.</p>
+
+        <p>Envie los datos de su formulario haciendo click en el botón <a href="#enviar">"Enviar"</a>.</p>
+
+        <p>Espere a ser contactado para saber el estado de su pedido.</p>
+
+    </article>
+
+        <section>
+
+            <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded" >
+
+                <fieldset>
+
+                    <legend class="subtitulo">Datos del comprador</legend>
+
+                <label for="Nombre">Nombre y apellido:</label>
+                <input type="text" name="Nombre" required><br>
+
+                <label for="Email">Email:</label>
+                <input type="email" name="Email" required><br>
+
+                <label for="telefono">Télefono:</label>
+                <input type="text" name="telefono" placeholder="Escriba su télefono..."><br>
+
+                <label for="celular">Celular:</label>
+                <input type="text" name="celular" placeholder="Escriba su celular...">
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend class="subtitulo">Tipo de pedido</legend>
+
+                    <label for="1">Medicamento con receta</label>
+                    <input type="checkbox" name="1"><br>
+
+                    <label for="2">Medicamento sin receta</label>
+                    <input type="checkbox" name="2"><br>
+
+                    <label for="retiro">Retiro por:</label>
+                    <select name="retiro">
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                    </select><br>
+
+                    <label for="jpg">Adjuntar foto de receta</label>
+                    <input type="file" name="jpg"><br>
+
+                    <label for="jpg2">Adjuntar foto de carnet de obra social</label>
+                    <input type="file" name="jpg2"><br>
+
+                    <label for="comentar">Especificaciones del pedido:</label><br>
+                    <textarea name="comentar" cols="30" rows="10" class="form-control">Comentarios...</textarea><br>
+
+                    <input type="submit" value="Enviar" id="enviar">
+
+                    <input type="reset" value="Borrar">
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <h5>Contactanos:
+        </h5>
+    
+    <div>
+    
+        <ul>
+    
+            <li>Facebook
+                <i class="fab fa-facebook-square"></i>: "farmacia raspo"
+            </li>
+    
+            <li>WhatsApp
+                <i class="fab fa-whatsapp"></i>: 3475621
+            </li>
+    
+        </ul>
+    
+    </div>
+    
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

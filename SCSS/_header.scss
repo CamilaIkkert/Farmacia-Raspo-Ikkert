@@ -1,0 +1,23 @@
+.header{
+    height: auto;
+    width: 100%;
+}
+.header__texto{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+.header--texto1{
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgb(230, 167, 86);
+    margin-bottom: 1rem;
+}
+.header--texto2{
+    color: #f6e1c5;
+    font-weight: 100;
+}
