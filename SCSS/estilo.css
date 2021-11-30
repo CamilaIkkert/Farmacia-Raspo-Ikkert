@@ -163,4 +163,14 @@ p {
   margin: 1rem;
 }
 
+iframe {
+  width: 80%;
+  height: 20rem;
+  vertical-align: middle;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
 /*# sourceMappingURL=estilo.css.map */
