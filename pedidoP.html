@@ -28,18 +28,13 @@
     </header>
 
     <nav class="navbar navbar-expand-lg navbar-dark py-lg-5 sticky-top" id="mainNav">
-
         <div class="container">
-
             <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Farmacia Raspo</a>
-
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
                 aria-controls="navbarToggleExternalContent" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
-
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="index.html">Inicio</a></li>
                     <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="ubicacion.html">Ubicación</a>
@@ -51,101 +46,162 @@
                     <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="pedidoP.html">Perfumería</a>
                     </li>
                 </ul>
-
             </div>
         </div>
-
-
     </nav>
 
-
     <main>
-
-        <h1 class="titulos">Pedidos perfumería</h1>
-
-        <article>
-
-            <p>En esta página podrá pedir sus productos de perfumería en general.</p>
-
-            <p>En caso de tener una foto del producto que desea pedir, puede agregarla en adjuntar archivo.</p>
-
-            <p>Rellen el fomrulario con sus datos y la información requerida.</p>
-
-            <p>Envie los datos de su formulario haciendo click en el botón <a href="#enviarp">"Enviar"</a>.</p>
-
-            <p>Espere a ser contactado para saber el estado de su pedido.</p>
-
-        </article>
-
-        <section>
-
-            <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
-
-                <fieldset>
-
-                    <legend class="subtitulo">Datos del comprador</legend>
-
-                <label for="Nombre">Nombre y apellido:</label>
-                <input type="text" name="Nombre" required class="form-group"><br>
-
-                <label for="Email">Email:</label>
-                <input type="email" name="Email" required class="form-group"><br>
-
-                <label for="telefono">Télefono:</label>
-                <input type="text" name="telefono" placeholder="Escriba su télefono..." class="form-group"><br>
-
-                <label for="celular">Celular:</label>
-                <input type="text" name="celular" placeholder="Escriba su celular..." class="form-group">
-
-                </fieldset>
-
-                <fieldset >
-
-                    <legend class="subtitulo">Tipo de pedido</legend>
-
-                    <label for="1">Desodorantes y perfumes</label>
-                    <input type="checkbox" name="1" class="form-group"><br>
-
-                    <label for="2">Cuidado bucal</label>
-                    <input type="checkbox" name="2" class="form-group"><br>
-
-                    <label for="3">Cuidado corporal</label>
-                    <input type="checkbox" name="3" class="form-group"><br>
-
-                    <label for="4">Cuidado del cabello</label>
-                    <input type="checkbox" name="4" class="form-group"><br>
-
-                    <label for="5">Cuidado de manos y pies</label>
-                    <input type="checkbox" name="5" class="form-group"><br>
-
-                    <label for="6">Cuidado del bebé</label>
-                    <input type="checkbox" name="6" class="form-group"><br>
-
-                    <label for="7">Otros</label>
-                    <input type="checkbox" name="7" class="form-group"><br>
-
-                    <label for="retiro">Retiro por:</label>
-                    <select name="retiro">
-                        <option>Mañana</option>
-                        <option>Tarde</option>
-                    </select><br>
-
-                    <label for="jpg">Adjuntar archivo</label>
-                    <input type="file" name="jpg"><br>
-
-                    <label for="comentar">Especificaciones del pedido:</label><br>
-                    <textarea name="comentar" cols="30" rows="10" class="form-control">Comentarios...</textarea><br>
-
-                    <input type="submit" value="Enviar" id="enviarp">
-
-                    <input type="reset" value="Borrar">
-
-                </fieldset>
-
-            </form>
-
+        <section class="pag-section clearfix">
+            <div class="container">
+                <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">Pedido online</span>
+                        <span class="section-heading-lower">Perfumería</span>
+                    </h2>
+                    <p class="mb-3">En caso que necesite realizar un pedido en específico de perfumería podrá hacerlo por esta página.Si tiene una imágen del producto que desea solicitar puede agregarla en adjuntar archivo. </p>
+                    <p class="mb-3">Rellene el fomrulario con sus datos y la información requerida.Envie los datos de su formulario haciendo click en el botón <a href="#enviarp">"Enviar"</a> y espere a ser contactado para saber el estado de su pedido.</p>
+                </div>
+            </div>
+            </div>
         </section>
-
+        <section class="pag-section segunda">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 mx-auto">
+                        <div class="segunda-text bg-faded text-center rounded">
+                            <h2 class="section-heading mb-4">
+                                <span class="section-heading-upper">Formulario de pedido</span>
+                                <span class="section-heading-lower">Datos del comprador</span>
+                            </h2>
+                            <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationDefault01">Nombre completo</label>
+                                        <input type="text" class="form-control" id="validationDefault01" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationDefault02">Email</label>
+                                        <input type="email" class="form-control" id="validationDefault02" required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationDefault03">Télefono</label>
+                                        <input type="text" class="form-control" id="validationDefault03" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="retiro">Retiro por</label>
+                                        <select class="custom-select" name="retiro" required>
+                                            <option>Mañana</option>
+                                            <option>Tarde</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <fieldset>
+                                    <legend class="section-heading section-heading-lower">Tipo de pedido</legend>
+                                    <div class="form-row">
+                                        <div class="col-md-4 form-group">
+                                        <label for="pedido">Categorías</label>
+                                        <select class="custom-select" name="pedido" required>
+                                            <option>Desodorantes y/o perfumes</option>
+                                            <option>Cuidado bucal</option>
+                                            <option>Cremas corporales</option>
+                                            <option>Cremas para rostro</option>
+                                            <option>Cuidado del cabello</option>
+                                            <option>Cuidado de bebes</option>
+                                            <option>Cuidado íntimo</option>
+                                            <option>Otros</option>
+                                            <option selected>Seleccione una categoría</option>
+                                        </select>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <label for="validationDefault01">Tipo de producto</label>
+                                            <input type="text" class="form-control" id="validationDefault01" required>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <label for="validationDefault02">Marca del prodcuto</label>
+                                            <input type="text" class="form-control" id="validationDefault02" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-md-4 form-group">
+                                        <label for="pedido">Categorías</label>
+                                        <select class="custom-select" name="pedido">
+                                            <option>Desodorantes y/o perfumes</option>
+                                            <option>Cuidado bucal</option>
+                                            <option>Cremas corporales</option>
+                                            <option>Cremas para rostro</option>
+                                            <option>Cuidado del cabello</option>
+                                            <option>Cuidado de bebes</option>
+                                            <option>Cuidado íntimo</option>
+                                            <option>Otros</option>
+                                            <option selected>Seleccione una categoría</option>
+                                        </select>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <label for="validationDefault01">Tipo de producto</label>
+                                            <input type="text" class="form-control" id="validationDefault01">
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <label for="validationDefault02">Marca del prodcuto</label>
+                                            <input type="text" class="form-control" id="validationDefault02">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-md-4 form-group">
+                                        <label for="pedido">Categorías</label>
+                                        <select class="custom-select" name="pedido">
+                                            <option>Desodorantes y/o perfumes</option>
+                                            <option>Cuidado bucal</option>
+                                            <option>Cremas corporales</option>
+                                            <option>Cremas para rostro</option>
+                                            <option>Cuidado del cabello</option>
+                                            <option>Cuidado de bebes</option>
+                                            <option>Cuidado íntimo</option>
+                                            <option>Otros</option>
+                                            <option selected>Seleccione una categoría</option>
+                                        </select>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <label for="validationDefault01">Tipo de producto</label>
+                                            <input type="text" class="form-control" id="validationDefault01">
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <label for="validationDefault02">Marca del prodcuto</label>
+                                            <input type="text" class="form-control" id="validationDefault02">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="retiro">Retiro por</label>
+                                            <select class="custom-select" name="retiro" required>
+                                                <option>Mañana</option>
+                                                <option>Tarde</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="jpg">Adjuntar imágen</label>
+                                            <input type="file" name="jpg">
+                                        </div>
+                                    </div>
+                                    <div class="form-row form-group">
+                                        <div class="col-md-5 mb-3">
+                                            <label for="comentar">Especificaciones del pedido</label>
+                                        </div>
+                                        <div class="col-md-7 mb-3">
+                                            <textarea name="comentar" cols="50" rows="10"
+                                                placeholder="Deje su comentario..."></textarea>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <button class="btn btn-primary" type="submit" id="enviar">Enviar</button>
+                                <button class="btn btn-primary" type="reset">Borrar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer text-faded text-center font-small">
