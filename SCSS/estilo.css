@@ -2,8 +2,7 @@
 * {
   margin: 0%;
   padding: 0%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -23,7 +22,7 @@ body {
   margin-bottom: 5rem;
   text-transform: uppercase;
   line-height: 1;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   text-align: center;
 }
 
@@ -42,7 +41,7 @@ body {
 
 #mainNav {
   background-color: rgba(32, 30, 30, 0.9);
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
 }
 
@@ -65,4 +64,5 @@ body {
 .titulos {
   text-align: center;
 }
+
 /*# sourceMappingURL=estilo.css.map */
