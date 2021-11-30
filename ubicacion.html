@@ -6,89 +6,118 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ubicación</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="SCSS/estilo.css">
+
 </head>
 
-<body class="fondo">
-    <header class="header">
-        <h1 class="header__texto d-none d-lg-block">
-            <span class="header header--texto1">Siempre cuidando tu salud</span>
-            <span class="header header--texto2">Farmacia Raspo</span>
-        </h1>
-    </header>
+<body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
-
-        <div class="container">
-
-            <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Farmacia Raspo</a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Inicio</a></li>
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="ubicacion.html">Ubicación</a></li>
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="horario.html">Horarios</a></li>
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="pedidoM.html">Medicamentos</a></li>
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="pedidoP.html">Perfumería</a></li>
-                </ul>
-
+        <header class="header">
+            <h1 class="header__texto d-none d-lg-block">
+                <span class="header header--texto1">Siempre cuidando tu salud</span>
+                <span class="header header--texto2">Farmacia Raspo</span>
+            </h1>
+        </header>
+    
+        <nav class="navbar navbar-expand-lg navbar-dark py-lg-5 sticky-top" id="mainNav">
+    
+            <div class="container">
+    
+                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Farmacia Raspo</a>
+    
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
+                    aria-controls="navbarToggleExternalContent" aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="index.html">Inicio</a></li>
+                        <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="ubicacion.html">Ubicación</a>
+                        </li>
+                        <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="horario.html">Horarios</a>
+                        </li>
+                        <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="pedidoM.html">Medicamentos</a>
+                        </li>
+                        <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="pedidoP.html">Perfumería</a>
+                        </li>
+                    </ul>
+    
+                </div>
             </div>
-
-        </div>
-
-    </nav>
-
-    <main>
-
-        <h1 class="titulos">Ubicación:</h1>
-
-        <div class="div">
-
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13448.73519342632!2d-60.8509514!3d-32.574622!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x143db88d2dbf9421!2sFarmacia%20Raspo!5e0!3m2!1ses!2sar!4v1634183503889!5m2!1ses!2sar" height="500px" width="1000px" loading="lazy"></iframe>
-
-        </div>
-
-    </main>
     
-    <footer>
-
-        <h5>Contactanos:
-        </h5>
     
-    <div>
+        </nav>
     
-        <ul>
     
-            <li>Facebook
-                <i class="fab fa-facebook-square"></i>: "farmacia raspo"
-            </li>
+        <main>
+            <section class="pag-section">
+                <div class="container">
+                    <iframe class="rounded"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13448.73519342632!2d-60.8509514!3d-32.574622!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x143db88d2dbf9421!2sFarmacia%20Raspo!5e0!3m2!1ses!2sar!4v1634183503889!5m2!1ses!2sar" loading="lazy"></iframe>
+                </div>
+            </section>
+            <section class="pag-section segunda">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-9 mx-auto">
+                            <div class="segunda-text bg-faded text-center rounded">
+                                <h2 class="section-heading mb-4">
+                                    <span class="section-heading-upper">Ubicación</span>
+                                    <span class="section-heading-lower">Indicaciones</span>
+                                </h2>
+                                <p>Nos encontramos en la localidad de Oliveros (a unos 50km de Rosario) en la provicnica de Santa Fé. Ubicados sobre la ruta nacional 11 en el centro del pueblo al frente de la comuna de Oliveros. </p>
+                                <p class="mb-0">En frente contará con estacionamiento público y en nuestra farmacia encontrará la mejor atención.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     
-            <li>WhatsApp
-                <i class="fab fa-whatsapp"></i>: 3475621
-            </li>
-    
-        </ul>
-    
-    </div>
-    
+        <footer class="footer text-faded text-center font-small">
+            <h6>Contacto</h6>
+            <hr class="divisor">
+            <div class="container">
+                    <div class="row py-lg-5">
+                            <p class="px-lg-5">
+                                <i class="fas fa-envelope"></i> info@ejemplo.com
+                            </p>
+                            <p class="px-lg-5">
+                                <i class="fas fa-phone"></i> 3477-562-125
+                            </p>
+                            <p class="px-lg-5">
+                                <i class="fab fa-facebook-f"></i> Farmacia Raspo
+                            </p>
+                            <p class="px-lg-5">
+                                <i class="fab fa-whatsapp"></i> 1245-562172
+                            </p>
+                    </div>
+            </div>
         </footer>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+            integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+            crossorigin="anonymous"></script>
+    
 </body>
 
 </html>
