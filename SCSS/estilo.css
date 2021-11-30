@@ -116,6 +116,11 @@ h6 {
     left: 0;
     position: absolute;
   }
+
+  .list-hours {
+    width: 50%;
+    font-size: 1.1rem;
+  }
 }
 .bg-faded {
   background-color: #f6e1c5;
@@ -126,14 +131,14 @@ h6 {
   color: #212529;
 }
 
-.section-heading .section-heading-upper {
+.section-heading-upper {
   display: block;
   font-size: 1rem;
   font-weight: 800;
   font-family: "Raleway", sans-serif;
 }
 
-.section-heading .section-heading-lower {
+.section-heading-lower {
   display: block;
   font-size: 2rem;
   font-weight: 100;
@@ -171,6 +176,21 @@ iframe {
   margin-right: 10%;
   margin-bottom: 3rem;
   margin-top: 3rem;
+}
+
+.list-hours {
+  font-size: 0.9rem;
+}
+
+.list-hours .list-hours-item {
+  border-bottom: 1px solid rgba(230, 167, 86, 0.5);
+  padding-bottom: 0.25rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.ms-auto {
+  margin-left: auto !important;
 }
 
 /*# sourceMappingURL=estilo.css.map */
