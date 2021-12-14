@@ -2,7 +2,7 @@ footer {
     background-color: rgba(47, 23, 15, 0.9);
 }
 .text-faded {
-    color: #f6e1c5;
+    color: $color1;
 }
 .divisor{
     width: 40%;
@@ -11,8 +11,8 @@ footer {
 }
 h6{
     text-align: left;
-    font-size: 2rem;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 100;
+    font-size: $size1;
+    font-family: $titulo-font;
+    font-weight: $weigth2;
     margin-left: 1rem;
 }
