@@ -7,19 +7,19 @@
     margin-bottom: 5rem;
     text-transform: uppercase;
     line-height: 1;
-    font-family: 'Raleway', sans-serif;
+    font-family: $titulo-font;
     text-align: center;
 }
 .header--texto1{
     display: block;
-    font-size: 2rem;
-    font-weight: 800;
+    font-size: $size1;
+    font-weight: $weigth1;
     color: rgb(230, 167, 86);
     margin-bottom: 1rem;
 }
 .header--texto2{
     color: #f6e1c5;
-    font-weight: 100;
-    font-size: 5rem;
+    font-weight: $weigth2;
+    font-size: $size2;
     line-height: 4rem;
 }
