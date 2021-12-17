@@ -1,18 +1,56 @@
 footer {
     background-color: rgba(47, 23, 15, 0.9);
 }
-.text-faded {
-    color: $color1;
+.redSocial{
+    width: 100%;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 1rem;
+    row-gap: 2rem;
+    grid-template-areas: "icono1 icono2 icono3 icono4";
+    justify-content: center;
+    justify-items: center;
+    color: #f6e1c5bb;
+    font-family: $texto-font;
+    font-weight: $weigth2;
+    font-style: italic;
+}
+#link{
+    color: #f6e1c5bb;
+}
+.icono1{
+    grid-area: "icono1";
+}
+.icono2{
+    grid-area: "icono2";
+}
+.icono3{
+    grid-area: "icono3";
+}
+.icono4{
+    grid-area: "icono4";
 }
 .divisor{
-    width: 40%;
-    height: 0.02rem;
-    background-color: rgba(230, 167, 86, 0.9);
+    background-color: $color2;
+    height: 0.10rem;
+    width: 80%;
+    margin-left: 10%;
 }
-h6{
-    text-align: left;
-    font-size: $size1;
-    font-family: $titulo-font;
-    font-weight: $weigth2;
-    margin-left: 1rem;
+.footer-copyright{
+    text-align: center;
+    color: black;
 }
+@media (max-width: 768px){
+    .redSocial {
+        width: 100%;
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr 1fr;
+        column-gap: 1rem;
+        row-gap: 2rem;
+        grid-template-areas: "icono1 icono2" "icono3 icono4";
+        justify-content: center;
+        justify-items: center;
+    }}
