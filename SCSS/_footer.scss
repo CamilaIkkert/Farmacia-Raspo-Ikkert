@@ -34,8 +34,7 @@ footer {
 .divisor{
     background-color: $color2;
     height: 0.10rem;
-    width: 80%;
-    margin-left: 10%;
+    width: 100%;
 }
 .footer-copyright{
     text-align: center;
@@ -51,6 +50,6 @@ footer {
         column-gap: 1rem;
         row-gap: 2rem;
         grid-template-areas: "icono1 icono2" "icono3 icono4";
-        justify-content: center;
+        align-items: center;
         justify-items: center;
     }}

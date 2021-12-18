@@ -84,8 +84,7 @@ footer {
 .divisor {
   background-color: #e6a756;
   height: 0.1rem;
-  width: 80%;
-  margin-left: 10%;
+  width: 100%;
 }
 
 .footer-copyright {
@@ -103,7 +102,7 @@ footer {
     column-gap: 1rem;
     row-gap: 2rem;
     grid-template-areas: "icono1 icono2" "icono3 icono4";
-    justify-content: center;
+    align-items: center;
     justify-items: center;
   }
 }
@@ -235,6 +234,14 @@ iframe {
 
 .ms-auto {
   margin-left: auto !important;
+}
+
+.grupoTextarea {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
 }
 
 /*# sourceMappingURL=estilo.css.map */

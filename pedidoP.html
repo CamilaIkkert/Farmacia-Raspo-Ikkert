@@ -104,7 +104,7 @@
                                 <span class="section-heading-upper">Formulario de pedido</span>
                                 <span class="section-heading-lower">Datos del comprador</span>
                             </h2>
-                            <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
+                            <form action="https://formspree.io/f/xeqnqvpr" method="post" >
                                 <div class="form-row">
                                     <div class="col-md-6 mb-3">
                                         <label for="validationDefault01">Nombre completo</label>
@@ -203,24 +203,24 @@
                                         </div>
                                     </div>
                                     <div class="form-row">
-                                        <div class="col-md-6 mb-3">
+                                        <div class="col-md-12 mb-3">
                                             <label for="retiro">Retiro por</label>
                                             <select class="custom-select" name="retiro" required>
                                                 <option>Mañana</option>
                                                 <option>Tarde</option>
                                             </select>
                                         </div>
-                                        <div class="col-md-6 mb-3">
-                                            <label for="jpg">Adjuntar imágen</label>
-                                            <input type="file" name="jpg">
+                                        <div class="col-md-12 mb-3 custom-file">
+                                            <label for="jpg" class="custom-file-label">Adjuntar imágen</label>
+                                            <input type="file" class="custom-file-input" name="jpg">
                                         </div>
                                     </div>
-                                    <div class="form-row form-group">
-                                        <div class="col-md-5 mb-3">
+                                    <div class="form-row form-group grupoTextarea">
+                                        <div class="col-md-4 mb-3">
                                             <label for="comentar">Especificaciones del pedido</label>
                                         </div>
-                                        <div class="col-md-7 mb-3 ">
-                                            <textarea name="comentar" cols="30"
+                                        <div class="col-md-8 mb-3">
+                                            <textarea name="comentar" 
                                                 placeholder="Deje su comentario..."></textarea>
                                         </div>
                                     </div>
@@ -237,18 +237,22 @@
 
     <footer>
         <div class="container redSocial">
-            <p class="icono1">
-                <i class="fas fa-envelope fa-2x"></i> PREGUNTAR.com
-            </p>
-            <p class="icono2">
-                <i class="fas fa-phone fa-2x"></i> (3476)-498126
-            </p>
-            <p class="icono3">
-                <a href="https://www.facebook.com/farmacia.raspo" id="link"><i class="fab fa-facebook fa-2x"></i></a>
-            </p>
-            <p class="icono4">
-                <a href="" id="link"><i class="fab fa-whatsapp fa-2x"></i></a>
-            </p>
+            <div class="icono1">
+                <i class="fas fa-envelope fa-3x"></i> 
+                <h6>farmaciaraspo@hotmail.com</h6>
+            </div>
+            <div class="icono2">
+                <i class="fas fa-phone fa-3x"></i> 
+                <h6>(3476) 498126</h6>
+            </div>
+            <div class="icono3">
+                <a href="https://www.facebook.com/farmacia.raspo" id="link"><i class="fab fa-facebook fa-3x"></i></a>
+                <h6>"Farmacia Raspo"</h6>
+            </div>
+            <div class="icono4">
+                <a href="https://wa.me/5493476643050" id="link"><i class="fab fa-whatsapp fa-3x"></i></a>
+                <h6>(3476) 643050</h6>
+            </div>
         </div>
         <hr class="divisor">
         <div class="footer-copyright">© 2021 Copyright: Camila Ikkert -
