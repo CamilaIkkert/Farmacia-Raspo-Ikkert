@@ -11,7 +11,7 @@ Este proyecto consistió en el armado de una página web (con 5 secciones) está
 Cada sección cuenta con:
 
 - Barra de navegación 
-- Cuerpo (main)
+- Cuerpo 
 - Pie de página
 
 También, toda la página web posee reponsive design para su uso en distintos disposiivos.
